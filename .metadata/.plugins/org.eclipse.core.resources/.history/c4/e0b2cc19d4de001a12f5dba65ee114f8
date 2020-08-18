@@ -1,0 +1,15 @@
+package com.productCatalog.prodCatalog.service;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Service;
+
+import com.productCatalog.prodCatalog.entity.Product;
+
+public interface ProductService {
+	
+	Product getProductById(int id);
+	
+	List<Product> getProductsByNameWithLetter(String letter);
+}

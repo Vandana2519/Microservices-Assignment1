@@ -1,0 +1,14 @@
+package com.productCatalog.prodCatalog.dao;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
+
+import com.productCatalog.prodCatalog.entity.Product;
+
+@Repository
+public interface ProductDao extends JpaRepository<Product, Integer>{
+	
+	@Query(value="select * from Product where id=?1",nativeQuery=true)
+	Product getProductById(int id);
+}

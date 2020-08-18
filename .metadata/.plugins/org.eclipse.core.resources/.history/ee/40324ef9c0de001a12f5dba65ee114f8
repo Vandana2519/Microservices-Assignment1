@@ -1,0 +1,5 @@
+package com.productCatalog.prodCatalog.entity;
+
+public class Product {
+
+}

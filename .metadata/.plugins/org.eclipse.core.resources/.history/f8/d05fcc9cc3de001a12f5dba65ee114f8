@@ -1,0 +1,6 @@
+package com.productCatalog.prodCatalog.controller;
+
+@RestController
+public class ProductRestController {
+
+}

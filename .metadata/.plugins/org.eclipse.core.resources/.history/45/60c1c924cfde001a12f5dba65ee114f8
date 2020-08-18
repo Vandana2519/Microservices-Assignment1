@@ -1,0 +1,5 @@
+package com.productCatalog.prodCatalog.dao;
+
+public interface ReviewDao {
+
+}

@@ -1,0 +1,30 @@
+package com.productCatalog.prodCatalog.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
+public class Product {
+	
+	@Id
+	@GeneratedValue
+	private int id;
+	private String name;
+	private double price;
+	private String description;
+	
+	public Product(String name, double price, String description) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.description = description;
+	}
+
+	public Product() {
+		super();
+	}
+	
+	
+
+}

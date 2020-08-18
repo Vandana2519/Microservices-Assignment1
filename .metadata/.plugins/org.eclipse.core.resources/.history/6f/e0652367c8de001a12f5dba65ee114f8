@@ -1,0 +1,8 @@
+package com.productCatalog.prodCatalog.service;
+
+import org.springframework.stereotype.Service;
+
+public interface ProductService {
+	
+	
+}

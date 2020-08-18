@@ -1,0 +1,19 @@
+package com.productCatalog.prodCatalog.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.productCatalog.prodCatalog.dao.ProductDao;
+import com.productCatalog.prodCatalog.entity.Product;
+
+public class ProductServiceImpl implements ProductService{
+	
+	@Autowired
+	private ProductDao productDao;
+	
+	@Override
+	public Product getProductById(int id) {
+		
+		return null;
+	}
+
+}

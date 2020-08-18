@@ -1,0 +1,36 @@
+package com.productCatalog.prodCatalog.entity;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
+public class Review {
+	
+	@Id
+	@GeneratedValue
+	private int reviewId;
+	private int stars;
+	private String author;
+	private String body;
+	
+	@ManyToOne
+	@JoinColumn(name = "id")
+	private Product product;
+
+	public Review(int stars, String author, String body, Product product) {
+		super();
+		this.stars = stars;
+		this.author = author;
+		this.body = body;
+		this.product = product;
+	}
+
+	public Review() {
+		super();
+	}
+	
+	
+}

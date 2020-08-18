@@ -1,0 +1,13 @@
+package com.productCatalog.prodCatalog.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class ProductRestController {
+	
+	@GetMapping("/products")
+	public List<Product> findAllProducts(){
+		
+	}
+}

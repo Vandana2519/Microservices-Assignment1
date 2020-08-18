@@ -1,0 +1,12 @@
+package com.productCatalog.prodCatalog.service;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Service;
+
+import com.productCatalog.prodCatalog.entity.Product;
+
+public interface ProductService {
+	
+	@Query(value="select * from Product where id=?1",nativeQuery=true)
+	Product getProductById(int id);
+}
